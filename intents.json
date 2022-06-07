@@ -1,0 +1,46 @@
+{"intents":[
+    {"tag":"saludo",
+      "patterns":["hola", "Un saludo", "buen dia", "que tal", "buenas tardes"],
+      "responses":["¿En que te puedo ayudar?"]
+    },
+    {"tag":"despedida",
+      "patterns":["hasta luego", "hasta pronto", "adios","nos vemos"],
+      "responses":["Hasta luego, fue un placer atenderte"]
+    },
+    {"tag":"correo",
+      "patterns":["correo", "quiero saber mi correo", "consultar correo"],
+      "responses":["Eres alumno o empleado"]
+    },
+    {"tag":"password",
+      "patterns":["clave", "quiero recuperar mi contraseña", "olvide mi contraseña"],
+      "responses":["Ingresa tu correo"]
+    },
+    {"tag":"alumno",
+      "patterns":["alumno", "estudiante", "soy alumno", "soy estudiante"],
+      "responses":["Ingresa tu NUA"]},
+      
+    {"tag":"empleado",
+      "patterns":["empleado", "soy empleado", "trabajador", "soy trabajador"],
+      "responses":["Ingresa tu NUE"]},
+
+    {"tag":"agradecimiento",
+      "patterns":["gracias", "muchas gracias", "me ayudaste mucho"],
+      "responses":["¿Te puedo ayudar en algo más?"]},
+
+    {"tag":"duda",
+      "patterns":["quien eres", "que eres", "como te llamas"],
+      "responses":["Soy sam, estoy aqui para ayudarte a recuperar tus accesos a las herramientas de la UG"]},
+
+    {"tag":"nua",
+      "patterns":["345805"],
+      "responses":["Tu correo es: jl.gutierrezbecerra@ugto.mx"]},
+ 
+    {"tag":"nue",
+      "patterns":["475802"],
+      "responses":["Tu correo es: ja.torresmejia@ugto.mx"]},
+
+    {"tag":"recovery",
+      "patterns":["jl.gutierrezbecerra@ugto.mx", "ja.torresmejia@ugto.mx"],
+      "responses":["Se enviaron las instrucciones a tu correo alterno registrado"]}
+  ]
+}
