@@ -7,35 +7,29 @@ stemmer = PorterStemmer()
 
 def tokenize(sentence):
     """
-    split sentence into array of words/tokens
-    a token can be a word or punctuation character, or number
+    Separacion de las palabras
+    en tokes:
+    sentence = [Hola como estas?]
+     -> ["hola", "como", "Estas", "?"]
     """
     return nltk.word_tokenize(sentence)
 
 
 def stem(word):
     """
-    stemming = find the root form of the word
-    examples:
-    words = ["organize", "organizes", "organizing"]
+    stemming = Encuentra la raiz de la palabra
+    words = ["organizar", "organizando", "organizas"]
     words = [stem(w) for w in words]
     -> ["organ", "organ", "organ"]
     """
     return stemmer.stem(word.lower())
 
-
+#algoritmo de la bolsa o cubeta
 def bag_of_words(tokenized_sentence, words):
-    """
-    return bag of words array:
-    1 for each known word that exists in the sentence, 0 otherwise
-    example:
-    sentence = ["hello", "how", "are", "you"]
-    words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
-    bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
-    """
-    # stem each word
+    
+    #se procesan las palabras
     sentence_words = [stem(word) for word in tokenized_sentence]
-    # initialize bag with 0 for each word
+    
     bag = np.zeros(len(words), dtype=np.float32)
     for idx, w in enumerate(words):
         if w in sentence_words: 

@@ -31,16 +31,57 @@
       "patterns":["quien eres", "que eres", "como te llamas"],
       "responses":["Soy sam, estoy aqui para ayudarte a recuperar tus accesos a las herramientas de la UG"]},
 
-    {"tag":"nua",
+    {"tag":"345805",
       "patterns":["345805"],
       "responses":["Tu correo es: jl.gutierrezbecerra@ugto.mx"]},
+    
+    {"tag":"345806",
+      "patterns":["345806"],
+      "responses":["Tu correo es: le.santoyoparamo@ugto.mx"]},
+
+    {"tag":"345807",
+      "patterns":["345807"],
+      "responses":["Tu correo es: br.lopezcano@ugto.mx"]},
+    
+    {"tag":"345808",
+      "patterns":["345808"],
+      "responses":["Tu correo es: ad.lopezgarcia@ugto.mx"]},
+
+    {"tag":"345809",
+      "patterns":["345809"],
+      "responses":["Tu correo es: me.garciahernandez@ugto.mx"]},
  
-    {"tag":"nue",
+    {"tag":"345810",
+      "patterns":["345810"],
+      "responses":["Tu correo es: pj.renteriamondelo@ugto.mx"]},
+
+    {"tag":"475801",
+      "patterns":["475801"],
+      "responses":["Tu correo es: ae.martinezhernandez@ugto.mx"]},
+
+    {"tag":"475802",
       "patterns":["475802"],
       "responses":["Tu correo es: ja.torresmejia@ugto.mx"]},
 
+    {"tag":"475803",
+      "patterns":["475803"],
+      "responses":["Tu correo es: mm.villasenior@ugto.mx"]},
+
+    {"tag":"475804",
+      "patterns":["475804"],
+      "responses":["Tu correo es: mp.andradevillas@ugto.mx"]},
+
+    {"tag":"475805",
+      "patterns":["475805"],
+      "responses":["Tu correo es: ma.diazmedrano@ugto.mx"]},
+
+    {"tag":"475806",
+      "patterns":["475806"],
+      "responses":["Tu correo es: da.gutierrezvalderrama@ugto.mx"]},
+
     {"tag":"recovery",
-      "patterns":["jl.gutierrezbecerra@ugto.mx", "ja.torresmejia@ugto.mx"],
+      "patterns":["jl.gutierrezbecerra@ugto.mx","le.santoyoparamo@ugto.mx","br.lopezcano@ugto.mx","ad.lopezgarcia@ugto.mx","me.garciahernandez@ugto.mx","pj.renteriamondelo@ugto.mx",
+        "ja.torresmejia@ugto.mx","ja.torresmejia@ugto.mx","mm.villasenior@ugto.mx", "mp.andradevillas@ugto.mx", "ma.diazmedrano@ugto.mx", "da.gutierrezvalderrama@ugto.mx" ],
       "responses":["Se enviaron las instrucciones a tu correo alterno registrado"]}
   ]
 }

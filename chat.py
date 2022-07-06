@@ -6,6 +6,7 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
+#Carga del archivo de entrenamiento, preparacion de los argumentos que recibe la red
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r', encoding='utf-8') as json_data:
@@ -27,7 +28,7 @@ model.eval()
 
 bot_name = "Sam"
 
-
+#diccionarios para las credenciales 
 Alumnos = [{'Nombre':'Luis','Nua':345805, 'Correo': 'jl.gutierrezbecerra@ugto.mx'}, {
         'Nombre':'Eduardo','Nua':345806, 'Correo': 'le.santoyoparamo@ugto.mx'},{ 
         'Nombre':'Roman', 'Nua':345807, 'Correo':'br.lopezcano@ugto.mx'},{ 
@@ -57,7 +58,8 @@ def get_user_email(user_profile, user_number):
                 return "Su correo es:\t" + Alumno['Correo']
             else:
                 return "Datos erroneos, verifica e intentalo de nuevo"
- 
+
+
 def get_password(user_profile, user_id):
     if user_profile == "empleado":
         for Empleado in Empleados:
@@ -70,8 +72,9 @@ def get_password(user_profile, user_id):
                
 #Funcion para enviar contraseña temporal por correo
 def send_password_email(user_email):
-    return "Se envio una contraseña temporal a su correo registrado: " + user_email
+    return "Se enviaron las instrucciones a tu correo alterno registrado"
 
+#funcion principal del bot para enviar respuesta en el deploy
 def get_response(msg):
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
