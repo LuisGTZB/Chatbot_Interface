@@ -2,8 +2,18 @@
 
 ## creacion de la pgina web donde se despliega el bot mediante una chatbox
 
-![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/879a7171-f8af-4d63-b00d-b70d61a50f56)
+Primera interaccion: Al abrir la caja de texto se encuentra la siguiente pantalla:
 
-![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/aaa551f5-89c6-4c39-ab97-7fc4bd74808a)
+![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/c26c392d-7516-4e8e-8d8d-baf501d1bb02)
 
-![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/9f4cc759-52a9-4408-bf87-6954eef1f207)
+Se inicia la interaccion, el chatbot solicita cierta información para hacer la busqueda de lo solicitado:
+
+![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/409f404d-262e-4e27-aaac-bcf69cf618b5)
+
+Se valida la información y se retorna la coincidencia con el valor ingresado:
+
+![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/d0fc5dc2-572e-4732-bbdf-4904f1eefd27)
+
+Para el caso de la contraseña el proceso es identico, pero los valores de retorno son una contraseña temporal enviada a un correo alterno:
+
+![image](https://github.com/LuisGTZB/Chatbot_Interface/assets/64428694/49ab2e08-8432-45e9-8031-975b03f41ea3)
