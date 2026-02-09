@@ -1,87 +1,75 @@
 {"intents":[
     {"tag":"saludo",
-      "patterns":["hola", "Un saludo", "buen dia", "que tal", "buenas tardes"],
-      "responses":["¿En que te puedo ayudar?"]
+      "patterns":["hola", "Un saludo", "buen dia", "que tal", "buenas tardes", ".", "buenos dias", "buenas noches", "hey", 
+      "saludos", "holaa", "holi", "buenas", "buenas!", "buenas!!", "buenas!!!", "hi", "hello", "buenas tardes!", 
+      "buenas tardes!!", "buenas tardes!!!", "buenos dias!", "buenos dias!!", "buenos dias!!!", "buenas noches!", 
+      "buenas noches!!", "buenas noches!!!", "que hubo", "que hubo!", "que hubo!!", "que hubo!!!", "que onda", "que onda!", "que onda",
+      "que onda!!!", "saludos!", "saludos!!", "saludos!!!"],
+      "responses":["¿En que te puedo ayudar?", "Hola, ¿como puedo ayudarte?", "Saludos, ¿en que te puedo ayudar?",
+      "Hola, ¿que necesitas saber?", "Hola, ¿en que te puedo apoyar?", "Hola, ¿como te puedo ayudar?",
+      "Hola, ¿que puedo hacer por ti?", "Hola, ¿que necesitas?", "Hola, ¿en que te puedo apoyar el dia de hoy?"]
     },
     {"tag":"despedida",
-      "patterns":["hasta luego", "hasta pronto", "adios","nos vemos"],
-      "responses":["Hasta luego, fue un placer atenderte"]
+      "patterns":["hasta luego", "hasta pronto", "adios","nos vemos", "chao", "bye", "see you", "goodbye", "nos vemos luego", "nos vemos pronto", "hasta la proxima",
+      "Es todo, gracias", "Eso es todo, gracias", "Eso es todo", "me ayudaste mucho", "gracias por tu ayuda", "gracias por todo", "eso es todo por ahora", "eso es todo por hoy"],
+      "responses":["Hasta luego, fue un placer atenderte", "Adios, que tengas un buen dia", "Nos vemos pronto, cuídate",
+      "Chao, que estés bien", "Bye, que tengas un excelente día", "Goodbye, take care", "Nos vemos luego, que estés bien",
+      "Hasta la próxima, cuídate mucho", "De nada, estoy aquí para ayudarte cuando lo necesites", "Con gusto, no dudes en regresar si necesitas más ayuda",
+      "Fue un placer ayudarte, hasta la próxima"]
     },
-    {"tag":"correo",
-      "patterns":["correo", "quiero saber mi correo", "consultar correo"],
-      "responses":["Eres alumno o empleado"]
+    {"tag":"Cotizacion",
+      "patterns":["estoy buscando una cotizacion", "quiero una cotizacion", "me puedes dar una cotizacion", "necesito una cotizacion",
+      "cotizacion", "cotización", "cotización por favor", "cotizacion por favor", "me puedes cotizar", "cotizar",
+      "cotizar por favor", "necesito cotizar", "me puedes dar una cotizacion por favor"],
+      "responses":["Claro, por favor ingresa los detalles del producto o servicio que deseas cotizar",
+      "Por supuesto, ¿qué producto te gustaría cotizar?", "Con gusto, por favor dime que proyecto estas realizando",
+      "Claro, ¿qué producto necesitas cotizar?", "con gusto, que producto estas buscando?"]
     },
-    {"tag":"password",
-      "patterns":["clave", "quiero recuperar mi contraseña", "olvide mi contraseña"],
-      "responses":["Ingresa tu correo"]
+    {"tag":"Comprar",
+      "patterns":["Estoy buscando vigueta", "quiero comprar vigueta", "quiero una losa", "quiero comprar losa", "necesito comprar vigueta", "necesito comprar losa", "comprar vigueta", "comprar losa",
+      "me puedes vender vigueta", "me puedes vender losa", "vender vigueta", "vender losa", "vender vigueta por favor", "vender losa por favor", "que precio tiene la vigueta", "que precio tiene la losa", "precio de la vigueta", "precio de la losa", "precio vigueta",
+      "precio vigueta por favor", "precio losa por favor", "precio de la bovedilla", "precio bovedilla", "precio bovedilla por favor", "que precio tiene la bovedilla", "quiero colar", "quiero techar", "necesito colar", "necesito techar", "colocar losa", "techar con losa", "colocar losa por favor", "techar con losa por favor",
+      "que precio tiene el muro de contencion", "precio del muro de contencion", "precio muro de contencion por favor", "que precio tiene el muro de contencion por favor", "que precio tienen los tanques de agua", "precio de los tanques de agua", "precio tanques de agua por favor", "que precio tienen los tanques de agua por favor",
+      "barda perimetral", "barda perimetral por favor", "precio de la barda perimetral", "que precio tiene la barda perimetral", "que precio tiene la barda perimetral por favor"],
+      "responses":["Claro, ¿me puedes dar detalles de tu proyecto para poder cotizarte?", "Por supuesto, ¿qué tipo de proyecto estás realizando?", "Con gusto, por favor dime que proyecto estas realizando",
+      "Claro, ¿qué tipo de proyecto estás realizando?", "con gusto, que proyecto estas buscando?"]
     },
-    {"tag":"alumno",
-      "patterns":["alumno", "estudiante", "soy alumno", "soy estudiante"],
-      "responses":["Ingresa tu NUA"]},
+    {"tag":"losa",
+      "patterns":["losa","vigueta", "bovedilla", "Quiero techar", "entrepiso", "colar una losa", "estoy construyendo un entrepiso", "quiero colocar una losa", "quiero techar con losa", "necesito colar una losa", "necesito techar con losa", "colocar losa", "techar con losa", "colocar losa por favor", "techar con losa por favor",
+      "estoy construyendo un segundo piso", "quiero construir un segundo piso", "necesito construir un segundo piso", "quiero colar un segundo piso", "necesito colar un segundo piso", "quiero techar un segundo piso", "necesito techar un segundo piso"],
+      "responses":["Claro, te pedire algunos datos y un asesor se pondrá en contacto contigo, si estas de acuerdo, por favor contesta 'De acuerdo'"]},
       
-    {"tag":"empleado",
-      "patterns":["empleado", "soy empleado", "trabajador", "soy trabajador"],
-      "responses":["Ingresa tu NUE"]},
+    {"tag":"Barda perimetral casa",
+      "patterns":["Bardear mi casa", "Quiero levantar muros en mi casa", "Bardear", "Bardear mi terreno", "Bardear mi propiedad", "Bardear mi casa por favor", "Bardear mi terreno por favor", "Bardear mi propiedad por favor"],
+      "responses":["Este sistema es implementado en el ámbito industrial, como en fábricas, bodegas, grandes empresas o naves industriales. si quieres saber más sobre este sistema, por favor contesta 'Muro Perimetral'"]},
 
-    {"tag":"agradecimiento",
-      "patterns":["gracias", "muchas gracias", "me ayudaste mucho"],
-      "responses":["¿Te puedo ayudar en algo más?"]},
+    {"tag":"Muro perimetral",
+      "patterns":["Muro perimetral", "Muro", "Muros perimetrales", "Muros", "Muros de contencion", "Muro de contencion", "Muros de contencion industriales", "Muro de contencion industrial"],
+      "responses":["Para poder realizar una cotizacion por favor ingresa tu nombre, los metros lineales de tu muro, la ubicacion de la obra y Tipo de proyecto: Nave industrial o Residencial (Enfocado a muros perimetrales para desarrollos)"]},
 
-    {"tag":"duda",
-      "patterns":["quien eres", "que eres", "como te llamas"],
-      "responses":["Soy sam, estoy aqui para ayudarte a recuperar tus accesos a las herramientas de la UG"]},
+    {"tag":"Tanque",
+      "patterns":["tanque para mi casa", "quiero un tanque para mi casa", "me cotizas un tanque para mi casa", 
+      "tanque de agua para mi casa", "Quiero un tanque", "Me puedes cotizar un tanque deagua", "Necesito un tanque de agua",
+      "tanque de agua"],
+      "responses":["Nuestros tanques de agua prefabricados estan diseñados para el almacenamiento de grandes cantidades de agua, a partir de 287m3, si te es util, te pedire algunos datos para darte una atencion mas puntual, si estas de acuerdo y quieres conocer las opciones contesta 'tanque vipro'"]},
 
-    {"tag":"345805",
-      "patterns":["345805"],
-      "responses":["Tu correo es: jl.gutierrezbecerra@ugto.mx"]},
+    {"tag":"vipro tanque",
+      "patterns":["tanque vipro", "tanque de agua vipro", "tanque prefabricado vipro", "tanque de agua prefabricado vipro", "tanque de agua para mi casa vipro"],
+      "responses":["Excelente, tenemos dos variaedades de tanque prefabricado, \n Tanques Agri: con capacidad de 287 hasta 5,764m³ \n Tanques Ménsula desde 500 m³ sin límite superior.\n Si te interesa una cotización, por favor ingresa tu nombre completo, el tipo de tanque, los metros cúbicos que necesitas y la ubicación de tu obra"]},
+
+    {"tag":"Acuerdo",
+      "patterns":["De acuerdo", "Estoy de acuerdo", "Si, estoy de acuerdo", "Si, de acuerdo", "De acuerdo, continuemos", "De acuerdo, sigamos", "Si, continuemos", "Si, sigamos", "ok"],
+      "responses":["Perfecto, me puedes proporcionar los siguientes datos: \n Nombre completo \n Medidas del proyecto (croquis, en caso de tener muros intermedios señalarlos en el croquis) o plano \n Uso de la losa (entrepiso o azotea) \n Tipo de bovedilla (Jalcreto o poliestireno) \n Dirección de la obra"]},
     
-    {"tag":"345806",
-      "patterns":["345806"],
-      "responses":["Tu correo es: le.santoyoparamo@ugto.mx"]},
+    {"tag":"datos",
+      "patterns":["477","479", "442", "443", "444", "445", "446", "447", "448", "449", "450", "451", "452", "453",
+      "454", "455", "456", "457", "458", "459","m3", "metros cubicos", "metros cúbicos", "m³", "metros lineales", "ml", 
+      "metros lineales", "metros lineales", "residencial", "nave industrial", "nave industrial", "residencial",
+      "mensula", "Ménsula", "agri", "Agri", "jalcreto", "Jalcreto", "poliestireno", "Poliestireno"],
+      "responses":["Te agradezco por proporcionar los datos, un asesor se pondrá en contacto contigo a la brevedad para brindarte una cotización personalizada y resolver cualquier duda que puedas tener. ¡Gracias por confiar en nosotros!\n Hay algo más en lo que pueda ayudarte?"]},
 
-    {"tag":"345807",
-      "patterns":["345807"],
-      "responses":["Tu correo es: br.lopezcano@ugto.mx"]},
-    
-    {"tag":"345808",
-      "patterns":["345808"],
-      "responses":["Tu correo es: ad.lopezgarcia@ugto.mx"]},
-
-    {"tag":"345809",
-      "patterns":["345809"],
-      "responses":["Tu correo es: me.garciahernandez@ugto.mx"]},
- 
-    {"tag":"345810",
-      "patterns":["345810"],
-      "responses":["Tu correo es: pj.renteriamondelo@ugto.mx"]},
-
-    {"tag":"475801",
-      "patterns":["475801"],
-      "responses":["Tu correo es: ae.martinezhernandez@ugto.mx"]},
-
-    {"tag":"475802",
-      "patterns":["475802"],
-      "responses":["Tu correo es: ja.torresmejia@ugto.mx"]},
-
-    {"tag":"475803",
-      "patterns":["475803"],
-      "responses":["Tu correo es: mm.villasenior@ugto.mx"]},
-
-    {"tag":"475804",
-      "patterns":["475804"],
-      "responses":["Tu correo es: mp.andradevillas@ugto.mx"]},
-
-    {"tag":"475805",
-      "patterns":["475805"],
-      "responses":["Tu correo es: ma.diazmedrano@ugto.mx"]},
-
-    {"tag":"475806",
-      "patterns":["475806"],
-      "responses":["Tu correo es: da.gutierrezvalderrama@ugto.mx"]},
-
-    {"tag":"recovery",
-      "patterns":["jl.gutierrezbecerra@ugto.mx","le.santoyoparamo@ugto.mx","br.lopezcano@ugto.mx","ad.lopezgarcia@ugto.mx","me.garciahernandez@ugto.mx","pj.renteriamondelo@ugto.mx",
-        "ja.torresmejia@ugto.mx","ja.torresmejia@ugto.mx","mm.villasenior@ugto.mx", "mp.andradevillas@ugto.mx", "ma.diazmedrano@ugto.mx", "da.gutierrezvalderrama@ugto.mx" ],
-      "responses":["Se enviaron las instrucciones a tu correo alterno registrado"]}
+    {"tag":"despedida",
+      "patterns":["no", "no, gracias", "no, eso es todo", "no, eso es todo por ahora", "no, eso es todo por hoy", "no, gracias por tu ayuda", "no, gracias por todo"],
+      "responses":["Muy bien, que tengas un excelente día, no dudes en regresar si necesitas más ayuda. ¡Hasta luego!"]}
   ]
 }
